@@ -2,9 +2,12 @@
 using namespace std;
 
 int main() {
-    double x;
-    cin >> x;
-    if (x > 0){
-        cout << x * x;
+    int x, y;
+    cin >> x >> y;
+    if ( (x >= 3) and (x <= 7) and (y >= -5) and (y <= 2)){
+        cout << "prinadl";
+    }
+    else{
+        cout << "ne prinadl";
     }
 }

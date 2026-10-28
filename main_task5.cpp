@@ -2,14 +2,18 @@
 using namespace std;
 
 int main() {
-    double x, y;
-    cin >> x >> y;
-    if (x > y){
-        cout << x << " " << y;
+    double x;
+    cin >> x;
+    if (x < 1000){
+        cout << "N";
     }
-    else if(x < y){
-        cout << y << " " << x;
+    else if (x < 5000){
+        cout << "L";
     }
-    else
-        cout << x;
+    else if (x < 15000){
+        cout << "M";
+    }
+    else{
+        cout << "E";
+    }
 }

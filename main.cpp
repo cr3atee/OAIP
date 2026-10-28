@@ -1,21 +1,15 @@
 #include <iostream>
+#include <cmath>
+
 using namespace std;
 
 int main() {
     int x;
     cin >> x;
-    if (x == 5){
-        cout << "otlichno";
+    if ((x < -4) or abs((x < 1.5))){
+        cout << "prinadl";
     }
-    else if (x == 4){
-        cout << "horosho";
+    else{
+        cout << "ne prinadl";
     }
-    else if (x == 3){
-        cout << "udovl";
-    }
-    else if (x == 2){
-        cout << "neud";
-    }
-    else
-        cout << "nevernaya ocenka";
 }

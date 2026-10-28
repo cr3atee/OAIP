@@ -2,9 +2,12 @@
 using namespace std;
 
 int main() {
-    double x;
-    cin >> x;
-    if ((2*x*x - 5*x + 1) != 0){
-        cout << (3*x*x - 5*x + 1) / (2*x*x - 5*x + 1);
+    int x1, y1, x2, y2;
+    cin >> x1 >> y1 >> x2 >> y2;
+    if ((x1 == x2 and y1 != y2) or (x1 != x2 and y1 == y2)){
+        cout << "mojet";
     }
+    else{
+        cout << "ne mojet";
+    } 
 }
