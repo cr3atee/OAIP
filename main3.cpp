@@ -1,15 +1,14 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
-    int x, y;
-    cin >> x >> y;
-    if ((x % 2 == 0) and (y % 2 == 0)){
-        cout << "oba chetnie";
+    int m, n, k;
+    cin >> m >> n >> k;
+    if (m * n >= k and (k % m == 0 or k % n == 0)){
+        cout << "YES";
     }
-    else if (x % 2 != 0 and y % 2 !=0){
-        cout << "oba ne chetnie";
+    else{
+        cout << "NO";
     }
-    else
-        cout << "odo chetoe drugoe ne chetnoe";
 }

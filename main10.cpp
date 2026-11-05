@@ -1,16 +1,41 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
-    double x, y, z;
-    cin >> x >> y >> z;
-    if (x >= y and x >= z){
-        cout << x;
+    double W, L, H, w, l, h;
+    double count, max = 0;
+    cin >> W >> L >> H >> w >> l >> h;
+
+    count = (W / w) * (L / l) * (H / h);
+    if (count > max) {
+        max = count;
     }
-    else if (y >= z){
-        cout << y;
+
+    count = (W / w) * (L / h) * (H / l);
+    if (count > max) {
+        max = count;
     }
-    else{
-        cout << z;
+
+    count = (W / l) * (L / w) * (H / h);
+    if (count > max) {
+        max = count;
     }
+
+    count = (W / l) * (L / h) * (H / w);
+    if (count > max) {
+        max = count;
+    }
+
+    count = (W / h) * (L / w) * (H / l);
+    if (count > max) {
+        max = count;
+    }
+
+    count = (W / h) * (L / l) * (H / w);
+    if (count > max) {
+        max = count;
+    }
+
+    cout << max;
 }

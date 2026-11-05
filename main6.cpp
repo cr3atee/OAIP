@@ -1,19 +1,14 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
-    int x;
-    cin >> x;
-    if (x < -3){
-        cout << x;
+    int x1, y1, x2, y2;
+    cin >> x1 >> y1 >> x2 >> y2;
+    if ((abs(x2 - x1) == 1 and abs(y2 - y1) == 2) or (abs(x2 - x1) == 2 and abs(y2 - y1) == 1)) {
+        cout << "YES";
     }
-    else if (x < -1){
-        cout << 2*x - 1;
-    }
-    else if (x < -5){
-        cout << x*x - 2;
-    } 
-    else{
-        cout << 1;
+    else {
+        cout << "NO";
     }
 }

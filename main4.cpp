@@ -1,13 +1,25 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
-    int x, y;
-    cin >> x >> y;
-    if ( (x >= 3) and (x <= 7) and (y >= -5) and (y <= 2)){
-        cout << "prinadl";
+    double a, b, c, d;
+    cin >> a >> b >> c >> d;
+    if (a == 0 and b == 0) {
+        if (c == 0 and d == 0) {
+            cout << "NO";
+        }
+        else {
+            cout << "INF";
+        }
     }
-    else{
-        cout << "ne prinadl";
+    else if (a == 0) {
+        cout << "NO";
+    }
+    else if (a * d - b * c == 0) {
+        cout << "NO";
+    }
+    else {
+        cout << -b / a;
     }
 }

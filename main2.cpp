@@ -1,13 +1,17 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
-    int x1, y1, x2, y2;
-    cin >> x1 >> y1 >> x2 >> y2;
-    if ((x1 == x2 and y1 != y2) or (x1 != x2 and y1 == y2)){
-        cout << "mojet";
+    int x, y, z;
+    cin >> x >> y >> z;
+    if (x == y and y == z) {
+        cout << 3;
     }
-    else{
-        cout << "ne mojet";
-    } 
+    else if (x == y or x == z or y == z) {
+        cout << 2;
+    }
+    else {
+        cout << 0;
+    }   
 }
