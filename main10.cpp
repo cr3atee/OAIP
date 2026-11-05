@@ -2,13 +2,15 @@
 using namespace std;
 
 int main() {
-    int v, t, s;
-    cin >> v >> t;
-    s = (v * t) % 400;
-    if (s > 200) {
-        cout << 400 - s;
+    double x, y, z;
+    cin >> x >> y >> z;
+    if (x >= y and x >= z){
+        cout << x;
     }
-    else {
-        cout << s;
+    else if (y >= z){
+        cout << y;
+    }
+    else{
+        cout << z;
     }
 }

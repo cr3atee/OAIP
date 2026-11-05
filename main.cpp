@@ -1,15 +1,14 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
 int main() {
-    int x;
-    cin >> x;
-    if ((x < -4) or abs(x) < 1.5){
-        cout << "prinadl";
+    int x, y, z;
+    cin >> x >> y >> z;
+    if (x * y * z <= 158) {
+        cout << "YES";
     }
-    else{
-        cout << "ne prinadl";
-    }
+    else {
+        cout << "NO";
+    }   
 }
