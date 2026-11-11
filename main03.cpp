@@ -1,15 +1,10 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int x, y;
+int main()
+{
+    int x, y, res = 0;
     cin >> x >> y;
-    if ((x % 2 == 0) and (y % 2 == 0)){
-        cout << "oba chetnie";
-    }
-    else if (x % 2 != 0 and y % 2 !=0){
-        cout << "oba ne chetnie";
-    }
-    else
-        cout << "odo chetoe drugoe ne chetnoe";
+    for(int i = 0; i < y; i++) res+=x;
+    cout << res;
 }

@@ -1,10 +1,12 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    double x;
-    cin >> x;
-    if ((2*x*x - 5*x + 1) != 0){
-        cout << (3*x*x - 5*x + 1) / (2*x*x - 5*x + 1);
+int main()
+{
+    int sum = 0, prod = 1;
+    for(int i = 5; i <= 35; i+=5){
+        sum += i;
+        prod *= i;
     }
+    cout << sum << '\n' << prod;
 }

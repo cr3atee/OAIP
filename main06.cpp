@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int x;
-    cin >> x;
-    if (x == 1){
-        cout << "pravilno";
+int main()
+{
+    double sum = 0.0;
+    for (double x = 1; x <= 97; x += 3){
+        double y = x + 1;
+        sum += (x/y);
     }
-    else
-        cout << "ne pravilno";
+    cout << sum;
 }
