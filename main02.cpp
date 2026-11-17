@@ -1,12 +1,15 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    int sum = 0, prod = 1;
-    for(int i = 5; i <= 35; i+=5){
-        sum += i;
-        prod *= i;
-    }
-    cout << sum << '\n' << prod;
+int main() {
+    int n, k=0;
+    cin >> n;
+    for (int i = 1; i <= n; i+=1 ){
+        k = k * 10 + i;
+        cout << k << "\n";
+    }   
+    for (int i = 1; i < n; i+=1 ){
+        k = k / 10;
+        cout << k << "\n";
+    } 
 }

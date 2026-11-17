@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int x, y;
-    cin >> x >> y;
-    if ((x >= 0 and x <= 23) and (y >= 0) and (y <= 60)){
-        cout << "da";
+int main()
+{
+    int x, i, res = 0;
+    cin >> x;
+    while(x != 0){
+        i = x;
+        cin >> x;
+        if ((x != 0) and (x > i)) res++;
     }
-    else
-        cout << "net";
+    cout << res;
 }

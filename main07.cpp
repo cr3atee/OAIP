@@ -1,14 +1,13 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    double x;
+int main()
+{
+    int x, i = 0;
     cin >> x;
-    if ((x >= 5000) and (x < 10000)){
-        x *= 0.9;
+    while(x != 0){
+        if (x > i) i=x;
+         cin >> x;
     }
-    else if (x >= 10000){
-         x *= 0.85;
-    }
-    cout << x;
+    cout << i;
 }

@@ -1,14 +1,13 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 int main()
 {
-    double x, y, p = 3.141592653;
+    int x, i = 0;
     cin >> x;
-    do {
-        x *= p / 180;
-        y = sin(x);
-        cout << y;
-    } while (0);
+    while(x != 0){
+        i += x;
+         cin >> x;
+    }
+    cout << i;
 }
