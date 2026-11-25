@@ -2,18 +2,11 @@
 using namespace std;
 
 int main() {
-    int n, k=0;
-    cin >> n;
-    for (int j = 1; j <= n; j++){
-        for (int s = 1; s <= n - j; s++) {
-            cout << " ";
-        }
-        for (int i = 1; i <= j; i+=1 ){
-            cout << i;
-        }   
-        for (int i = j - 1; i >= 1; i-=1 ){
-            cout << i;
-        } 
-        cout << "\n";
+    const size_t n = 10;
+    double a[n] {3.1, 2.4, -1.5, 5, 0.3, 7.2, -6.1, 10.2, -4.5, -5.2};
+    double s = 0.0;
+    for (size_t i=0; i < n; ++i){
+        if (a[i] > 5) s += a[i];
     }
-}
+    cout << s;
+}    

@@ -2,14 +2,9 @@
 using namespace std;
 
 int main() {
-    int n, k=0;
-    cin >> n;
-    for (int i = 1; i <= n; i+=1 ){
-        k = k * 10 + i;
-        cout << k << "\n";
-    }   
-    for (int i = 1; i < n; i+=1 ){
-        k = k / 10;
-        cout << k << "\n";
-    } 
-}
+    const size_t n = 10;
+    double a[n] {3.1, 2.4, -1.5, 5, 0.3, 7.2, -6.1, 10.2, -4.5, -5.2};
+    for (size_t i=1; i < n; i+=2){
+        cout << a[i] << " ";
+    }
+}    
